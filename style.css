@@ -1,0 +1,62 @@
+h1 {
+  padding: 10px;
+  color: #513ee6;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 28px;
+}
+footer a {
+  font-size: 13px;
+  color: rgb(250, 124, 86);
+}
+.main {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  padding-bottom: 7px;
+}
+.fas {
+  font-size: 30px;
+}
+
+.fa-search,
+.fa-map-marker-alt {
+  font-size: 15px;
+}
+
+.container {
+  text-align: center;
+  color: #6960bf;
+  font-family: "Assistant", sans-serif;
+  max-width: 550px;
+  margin-top: 35px;
+}
+
+input {
+  width: 105%;
+}
+.btn {
+  line-height: 4px;
+  border: solid 1px;
+}
+.spacing {
+  padding: 0;
+  margin: 0;
+}
+
+.spasingBetween {
+  width: 1px;
+}
+.forecast-temp {
+  padding-top: 13px;
+  font-size: 11px;
+}
+
+.card {
+  padding-left: 20px;
+}
+
+.search {
+  margin-left: 0;
+}

@@ -6,8 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="style.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap" rel="stylesheet" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://kit.fontawesome.com/718f5541a8.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
+  <div class="container">
+    <div class="card main">
+      <div class="card-body main">
+        <div class="row search">
+          <div class="col-8 search">
+            <form id="search-form">
+              <input type="text" id="city-input" placeholder="Search another city" autocomplete="off" />
+            </form>
+          </div>
+          <div class="col-1">
+            <button type="button" class="btn btn-light">
+              <i class="fas fa-search search"></i>
+            </button>
+          </div>
+          <div class="col-1 spacingBetween"></div>
+          <div class="col-1 spacing">
+            <button id="current-location" type="button" class="btn btn-success">
+              <i class="fas fa-map-marker-alt"></i>
+            </button>
+          </div>
+        </div>
+        <h1>
+          <span id="current-time">Currently</span>
+          <span id="temp-value">13</span>°C in
+          <span id="current-city">Herzliya</span>
+        </h1>
+        <h2>
+          Today
+          <i class="fas fa-sun today-emoji"></i>
+          <span class="temp">
+            14°C | 11°C
+          </span>
+        </h2>
+        <div class="card forecast">
+          <div class="card-body forecast">
+            <div class="row days">
+              <div class="col-1"></div>
+              <div class="col-2">
+                Tue
+              </div>
+              <div class="col-2">
+                Wed
+              </div>
+              <div class="col-2">
+                Thu
+              </div>
+              <div class="col-2">
+                Fri
+              </div>
+              <div class="col-2">
+                Sat
+              </div>
+              <div class="col-1"></div>
+            </div>
+            <div class="row emoji">
+              <div class="col-1"></div>
+              <div class="col-2">
+                <i class="fas fa-cloud-showers-heavy"></i>
+              </div>
+              <div class="col-2">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <div class="col-2">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="col-2">
+                <i class="fas fa-smog"></i>
+              </div>
+              <div class="col-2">
+                <i class="fas fa-snowflake"></i>
+              </div>
+              <div class="col-1"></div>
+            </div>
+  
+            <div class="row forecast-temp">
+              <div class="col-1"></div>
+              <div class="col-2">
+                14°C | 11°C
+              </div>
+              <div class="col-2">
+                14°C | 11°C
+              </div>
+              <div class="col-2">
+                14°C | 11°C
+              </div>
+              <div class="col-2">
+                14°C | 11°C
+              </div>
+              <div class="col-2">
+                14°C | 11°C
+              </div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer><a id="farenheit-link" href="#">Show in °F</a></footer>
+    </div>
+  </div>
   <script src="script.js"></script>  
 </body>
 </html>
