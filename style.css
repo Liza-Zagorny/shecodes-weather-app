@@ -8,10 +8,18 @@ h1 {
 h2 {
   font-size: 28px;
 }
-footer a {
+h6 a {
   font-size: 13px;
   color: rgb(250, 124, 86);
 }
+
+footer {
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .main {
   background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   padding-bottom: 7px;
